@@ -1,33 +1,92 @@
 .about {
     margin: 0 auto;
     position: relative;
-}
-.abou__img {
-    display: block;
     width: 320px;
-    height: 235px;
-    margin: 0 auto;
+    min-height: 235px;
+    background-image: url(../img/about/about-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/about/about-mobile@2x.jpg");
+    }
+
+    @media (min-width: @tablet) {
+        width: 768px;
+        min-height: 344px;
+        background-image: url(../img/about/about-tablet.jpg);
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/about/about-tablet@2x.jpg");
+        }
+
+    }
+
+    @media (min-width: @desktop) {
+        width: 1920px;
+        min-height: 860;
+        background-image: url("../img/about/about-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/about/about-desktop@2x.jpg");
+        }
+
+    }
 }
 
 .about__title {
-    position: absolute;
-    font-family: "Montserrat", "Arial", sans-serif;
+    margin: 0 auto;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
     color: @basic-white;
-    margin-top: 18px;
+    padding-top: 81px;
     width: 290px;
     text-align: center;
+
+    @media (min-width: @tablet) { 
+        width: auto; 
+        font-size: 30px;
+        line-height: 45px;
+        padding-top: 60px;
+    }
 }
 
 .about__text {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 16px;
     line-height: 27px;
     text-align: center;
     letter-spacing: -0.466667px;
     padding: @mobile-padding;
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-top: 102px;
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet) {  
+        margin-top: 15px;
+        color: @basic-white;
+        padding: 0;
+        margin-bottom: 11px;
+    }
+}
+
+.about__content-wrapper {
+    @media (min-width: @tablet) {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+.about__button {
+    text-align: start;
+    padding-left: 38px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: url("../../img/arrow-down-icon.svg") no-repeat;
+        width: 15px;
+        height: 15px;
+        right: 40px;
+    }
 }

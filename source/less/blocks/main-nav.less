@@ -1,5 +1,22 @@
 .main-nav {
     margin: 0;
+    z-index: 10;
+    
+    @media (max-width: @tablet-max) {
+        &--open {
+          position: absolute;
+          width: 100%;
+          background-color: @basic-white;
+        }
+    
+        &--close {
+          display: none;
+        }
+    
+        &--nojs {
+          display: block;
+        }
+      }
 }
 
 .main-nav__list {
@@ -11,7 +28,6 @@
 .main-nav__link {
     display: block;
     text-decoration: none;
-    font-family: "Montserrat", "Arial", sans-serif;
     color: @dark-grey;
     font-weight: 600;
     font-size: 20px;
@@ -19,5 +35,14 @@
     width: 100%;
     padding: 17px 16px;
     box-sizing: border-box;
+    position: relative;
 
+    &::before {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: url(../img/shape-icon.svg) no-repeat;
+        right: 17px;
+    }
 }

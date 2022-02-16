@@ -1,13 +1,33 @@
 .question {
     margin: 0 auto;
+
+    @media (min-width: @tablet) {
+        width: 768px;
+        min-height: 455px;
+        box-sizing: border-box;
+        background-image: url("../img/question/question-background-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 70px 0;
+    }
+}
+
+.question__content-wrapper {
     padding: @mobile-padding;
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: @light-grey-4;
+    margin: 0 auto;
+
+    @media (min-width: @tablet) {
+        width: 658px;
+        box-sizing: border-box;
+        min-height: 311px;
+        padding: 50px;
+    }
 }
 
 .question__title {
-    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 600;
     font-size: 25px;
     line-height: 32px;
@@ -16,25 +36,37 @@
 }
 
 .question__text {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 24px;
     text-align: center;
+    margin: 0;
+    margin-top: 19px;
+
+    @media (min-width: @tablet) {
+        margin-top: 19px;
+    }
 }
 
-// .question__form {
-  
-// }
+.question__form {
+    // margin-top: @indent;
+
+    @media (min-width: @tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: @indent;
+        margin: 0 auto;
+        margin-top: @indent;
+        margin-top: 24px;
+    }
+}
 
 .question__label input {
     width: 288px;
-    padding: 15px;
+    padding: 16px;
     margin: 0 auto;
     background: #FFFFFF;
     border: 1px solid @light-grey-2-03;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 21px;
 
     &::placeholder {
         font-family: "Montserrat", "Arial", sans-serif;
@@ -42,8 +74,22 @@
         font-size: 14px;
         line-height: 17px;
     }
+
+    @media (min-width: @tablet) {
+        width: 269px;
+        margin-top: 0;
+    }
 }
 
 .question__form-button {
     margin-top: 20px;
+
+    @media (min-width: @tablet) {
+        margin-top: 0;
+    }
+}
+
+.question__form-input-wrapper {
+    margin: 0 auto;
+    width: min-content;
 }

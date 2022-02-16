@@ -4,24 +4,32 @@
 }
 
 .places__title {
-    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
     text-align: center;
+    margin: 0;
+
+    @media (min-width: @tablet) {
+        font-size: 30px;
+        line-height: 45px;
+    }
 }
 
 .places__description {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 16px;
     line-height: 28px;
     text-align: center;
     letter-spacing: -0.466667px;
     color: @light-grey-2-07;
     padding: @mobile-padding;
-    margin: 0;
-    margin-top: 20px;
+    margin: 0 auto;
+    margin-top: @indent;
+
+    @media (min-width: @tablet) {
+        width: 350px;
+        padding: 0;
+        margin-top: 20px;
+    }
 }
 
 .places__list {
@@ -30,10 +38,22 @@
     gap: 35px;
     list-style: none;
     margin: 0 auto;
+    margin-top: @indent;
     padding: @mobile-padding;
+
+    @media (min-width: @tablet) {
+        width: 616px;
+        padding: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        gap: 40px;
+        justify-content: space-around;
+    }
 }
 
 .places__item {
+    width: 288px;
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -47,7 +67,6 @@
 }
 .places__item-title {
     width: 215px;
-    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -55,7 +74,7 @@
     letter-spacing: -0.415px;
     background-color: @basic-white;
     margin: 0 36px;
-    padding: 15px 0;
+    padding: 16px 0;
     position: absolute;
-    bottom: 0
+    bottom: 0;
 }

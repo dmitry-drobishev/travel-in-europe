@@ -4,35 +4,80 @@
 
 .tours__card {
     margin-top: 24px;
+
+    @media (min-width: @tablet) {
+        margin-top: 30px;
+    }
 }
 
 .tours__card-title {
-    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
     text-align: center;
     margin: 0;
+
+    @media (min-width: @tablet) {
+        font-size: 30px;
+        line-height: 45px;
+
+    }
 }
 
 .tours__card-text {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 16px;
     line-height: 28px;
     text-align: center;
     letter-spacing: -0.466667px;
     color: @light-grey-2-07;
-    padding: mobile-padding;
+    padding: @mobile-padding;
     margin: 0;
-    margin-top: 20px;
+    margin-top: @indent;
+
+    @media (min-width: @tablet) {
+        padding: @tablet-padding;
+    }
 }
 
 .tours__card-button {
-    margin-top: 20px;
+    margin-top: @indent;
     margin-bottom: 50px;
+
+    @media (min-width: @tablet) {
+        margin-bottom: 31px;
+    }
 }
 
 .tours__navigation-list {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 15px;
     border-bottom: 1px solid @light-grey-2-03;
+    margin-left: 16px;
+    margin-top: 40px;
+    display: flex;
+    gap: 100px;
+
+    @media (min-width: @tablet) {
+        margin-left: 21px;
+        margin-top: 95px;
+    }
+}
+
+.tours__navigation-item {
+    &--hidden {
+        display: none;
+    }
+
+    &--active .tours__navigation-link {
+        color: @light-pink;
+    }
+}
+
+.tours__navigation-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.415px;
+    color: @light-grey-2-03;
 }

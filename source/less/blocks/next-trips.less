@@ -2,31 +2,71 @@
     padding: @mobile-padding;
     padding-top: 60px;
     padding-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    justify-content: space-between;
     border-bottom: 1px solid #D7D9DF;
+
+    @media (min-width: @tablet) {
+        box-sizing: border-box;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    
 }
 
+.next-trips__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0;
+
+    @media (min-width: @tablet) {
+        border-right: 1px solid #D7D9DF;
+        text-align: start;
+    }
+}
+    
+
 .next-trips__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: @indent;
+
+    @media (min-width: @tablet) {
+        row-gap: 0;
+        gap: 30px;
+        justify-content: left;
+        border-right: 1px solid #D7D9DF;
+
+    }
+}
+
+.next-trips__column-list {
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 50%;
+    width: 134px;
     margin: 0 auto;
-    // text-align: center;
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @media (min-width: @tablet) {
+        margin: 0;
+        width: auto;
+    }
 }
 
 .next-trips__item {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
     color: @light-grey-3;
+
+    @media (min-width: @tablet) {
+        text-align: left;
+    }
 }

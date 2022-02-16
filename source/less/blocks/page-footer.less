@@ -1,0 +1,16 @@
+.page-footer {
+    @media (min-width: @tablet) {
+        margin: 0 auto;
+        display: grid;
+        width: @tablet;
+        grid-template-columns: 416px 352px;
+        padding: @tablet-padding;
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+
+    @media (min-width: @desktop) {
+        width: @desktop-content;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

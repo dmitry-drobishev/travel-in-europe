@@ -10,7 +10,7 @@
 
 <header class="page-header">
     <div class="page-header__row-wrapper">
-        <a class="page-header__logo" href="#">
+        <a class="page-header__logo">
             <picture>
                 <img src="./img/logo.svg" width="44" height="17" alt="логотип Way">
             </picture>
@@ -25,13 +25,15 @@
         <ul class="main-nav__list">
 
             <li class="main-nav__item">
-                <a class="main-nav__link" href="#">О путешествии</a>
+                <a class="main-nav__link" href="#about-tours">О путешествии</a>
             </li>
 
             <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Цены</a>
+                <a class="main-nav__link" href="#price">Цены</a>
             </li>
         </ul>
+
+        <a class="main-nav__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
     </nav>
 </header>
 
@@ -54,47 +56,58 @@
 
             <li class="places__item">
                 <picture>
-                    <source type="image/webp" srcset="./img/places/places-mobile-4.webp 1x, ./img/places/places-mobile@2x-4.webp 2x">
-                    <img class="places__img" src="./img/places/places-mobile-4.jpg" srcset="./img/places/places-mobile@2x-4" width="288" height="425" alt="вид на горы">
+                    <source media="(min-width: 1444px)" srcset="./img/places/greece-desktop.webp 1x, ./img/places/greece-desktop@2x.webp 2x">
+                    <source media="(min-width: 1444px)" srcset="./img/places/greece-desktop.jpg 1x, ./img/places/greece-desktop@2x.jpg 2x">
+                    <source type="image/webp" srcset="./img/places/greece-mobile.webp 1x, ./img/places/greece-mobile@2x.webp 2x">
+                    <img class="places__img" src="./img/places/greece-mobile.jpg" srcset="./img/places/greece-mobile@2x.jpg" width="288" height="425" alt="вид на горы">
                 </picture>
                 <p class="places__item-title">Греция</p>
             </li>
 
             <li class="places__item">
                 <picture>
-                    <source type="image/webp" srcset="./img/places/places-mobile.webp 1x, ./img/places/places-mobile@2x.webp 2x">
-                    <img class="places__img" src="./img/places/places-mobile.jpg" srcset="./img/places/places-mobile@2x" width="288" height="425" alt="море и пляж вид сверху">
+                    <source media="(min-width: 1444px)" srcset="./img/places/albania-desktop.webp 1x, ./img/places/albania-desktop@2x.webp 2x">
+                    <source media="(min-width: 1444px)" srcset="./img/places/albania-desktop.jpg 1x, ./img/places/albania-desktop@2x.jpg 2x">
+                    <source type="image/webp" srcset="./img/places/albania-mobile.webp 1x, ./img/places/albania-mobile@2x.webp 2x">
+                    <img class="places__img" src="./img/places/albania-mobile.jpg" srcset="./img/places/albania-mobile@2x" width="288" height="425" alt="море и пляж вид сверху">
                 </picture>
                 <p class="places__item-title">Албания</p>
             </li>
 
             <li class="places__item">
                 <picture>
-                    <source type="image/webp" srcset="./img/places/places-mobile-1.webp 1x, ./img/places/places-mobile@2x-1.webp 2x">
-                    <img class="places__img" src="./img/places/places-mobile-1.jpg" srcset="./img/places/places-mobile@2x-1" width="288" height="425" alt="вид на море и старую церковь">
+                    <source media="(min-width: 1444px)" srcset="./img/places/macedonia-desktop.webp 1x, ./img/places/macedonia-desktop@2x.webp 2x">
+                    <source media="(min-width: 1444px)" srcset="./img/places/macedonia-desktop.jpg 1x, ./img/places/macedonia-desktop@2x.jpg 2x">
+                    <source type="image/webp" srcset="./img/places/macedonia-mobile.webp 1x, ./img/places/macedonia-mobile@2x.webp 2x">
+                    <img class="places__img" src="./img/places/macedonia-mobile.jpg" srcset="./img/places/macedonia-mobile@2x" width="288" height="425" alt="вид на море и старую церковь">
                 </picture>
                 <p class="places__item-title">Македония</p>
             </li>
 
             <li class="places__item">
                 <picture>
-                    <source type="image/webp" srcset="./img/places/places-mobile-2.webp 1x, ./img/places/places-mobile@2x-2.webp 2x">
-                    <img class="places__img" src="./img/places/places-mobile-2.jpg" srcset="./img/places/places-mobile@2x-2" width="288" height="425" alt="горная река и лес вид сверху">
+                    <source media="(min-width: 1444px)" srcset="./img/places/montenegro-desktop.webp 1x, ./img/places/montenegro-desktop@2x.webp 2x">
+                    <source media="(min-width: 1444px)" srcset="./img/places/montenegro-desktop.jpg 1x, ./img/places/montenegro-desktop@2x.jpg 2x">
+                    <source type="image/webp" srcset="./img/places/montenegro-mobile.webp 1x, ./img/places/montenegro-mobile@2x.webp 2x">
+                    <img class="places__img" src="./img/places/montenegro-mobile.jpg" srcset="./img/places/montenegro-mobile@2x" width="288" height="425" alt="горная река и лес вид сверху">
                 </picture>
                 <p class="places__item-title">Черногория</p>
             </li>
 
             <li class="places__item">
                 <picture>
-                    <source type="image/webp" srcset="./img/places/places-mobile-3.webp 1x, ./img/places/places-mobile@2x-3.webp 2x">
-                    <img class="places__img" src="./img/places/places-mobile-3.jpg" srcset="./img/places/places-mobile@2x-3" width="288" height="425" alt="подвезное озеро, сталактиты и сталагмиты">
+                    <source media="(min-width: 1444px)" srcset="./img/places/croatia-desktop.webp 1x, ./img/places/croatia-desktop@2x.webp 2x">
+                    <source media="(min-width: 1444px)" srcset="./img/places/croatia-desktop.jpg 1x, ./img/places/croatia-desktop@2x.jpg 2x">
+                    
+                    <source type="image/webp" srcset="./img/places/croatia-mobile.webp 1x, ./img/places/croatia-mobile@2x.webp 2x">
+                    <img class="places__img" src="./img/places/croatia-mobile.jpg" srcset="./img/places/croatia-mobile@2x" width="288" height="425" alt="подвезное озеро, сталактиты и сталагмиты">
                 </picture>
                 <p class="places__item-title">Хорватия</p>
             </li>
         </ul>
     </section>
 
-    <section class="tours">
+    <section class="tours" id="about-tours">
         <nav class="tours__navigation">
             <ul class="tours__navigation-list">
                 <li class="tours__navigation-item tours__navigation-item--active">
@@ -111,36 +124,42 @@
                 </li>
             </ul>
         </nav>
-        <div class="tours__card">
+
+        <img class="tours__background-img" src="./img/map-background.svg" width="1444" height="1208" alt="карта фон">
+        
+    </section>
+
+    <div class="tours-reviews__row-wrapper">
+        <section class="tours__card">
             <h3 class="tours__card-title">Греция</h3>
             <p class="tours__card-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
             <button class="button tours__card-button">купить тур сейчас</button>
-        </div>
-    </section>
-
-    <section class="reviews">
-        <div class="reviews__content-wrapper">
-            <h3 class="reviews__title">Отзывы</h3>
-            <p class="reviews__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
-            <div class="reviews__user-wrapper">
-                <picture>
-
-                    <source type="image/webp" srcset="./img/reviews/reviews-foto1.webp 1x, ./img/reviews/reviews-foto1@2x.webp 2x">
-                    <img class="reviews__foto" src="./img/reviews/reviews-foto1.jpg" srcset="./img/reviews/reviews-foto1@2x.jpg" width="38" height="38"  alt="аватарка комментатора">
-                </picture>
-                <p class="reviews__name">Влада Голицина</p>
+        </section>
+    
+        <section class="reviews">
+            <div class="reviews__content-wrapper">
+                <h3 class="reviews__title">Отзывы</h3>
+                <p class="reviews__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
+                <div class="reviews__user-wrapper">
+                    <picture>
+    
+                        <source type="image/webp" srcset="./img/reviews/reviews-foto1.webp 1x, ./img/reviews/reviews-foto1@2x.webp 2x">
+                        <img class="reviews__foto" src="./img/reviews/reviews-foto1.jpg" srcset="./img/reviews/reviews-foto1@2x.jpg" width="38" height="38"  alt="аватарка комментатора">
+                    </picture>
+                    <p class="reviews__name">Влада Голицина</p>
+                </div>
             </div>
-        </div>
-        <div class="reviews__background">
-            <span class="visually-hidden">
-                Фоновое изображение блока
-            </span>
-        </div>
-    </section>
+            <div class="reviews__background">
+                <span class="visually-hidden">
+                    Фоновое изображение блока
+                </span>
+            </div>
+        </section>
+    </div>
 
-    <section class="price">
+    <section class="price" id="price">
         <h3 class="price__title">Цены</h3>
-        <p class="price__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
+        <p class="price__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями,<br> отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
         <p class="price__info">Cяжитесь с нами</p>
         <a class="price__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
         <ul class="price-card__list">
@@ -228,32 +247,45 @@
         </ul>
     </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts">
         <h3 class="contacts__title">Наши контакты</h3>
         <a class="contacts__mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
         <a class="contacts__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
-    </section> -->
+    </section>
 
-    <!-- <section class="corporate-travel">
+    <section class="corporate-travel">
         <h3 class="corporate-travel__title">Корпоративные путешествия</h3>
         <p class="corporate-travel__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
-    </section> -->
+    </section>
 </footer>
 
-<section class="modal visually-hidden">
-    <h3 class="modal__title">Купить тур</h3>
-        <form class="modal__form" action="">
-            <label class="modal__tel">
-                <input type="tel" placeholder="Введите 10 цифр номера" maxlength="10">
-            </label>
+<section class="modal">
+    <div class="modal__wrapper">
+        <button class="modal__close-button">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        
+        <picture>
+            <source type="image/webp" srcset="./img/modal/modal-tablet.webp 1x, ./img/modal/modal-tablet@2x.webp 2x">
+            <img class="modal__img" src="./img/modal/modal-tablet.jpg" srcset="./img/modal/modal-tablet@2x.jpg 2x" width="344" height="444px" alt="фоновое изображение море и скалы">
+        </picture>
 
-            <label class="modal__email">
-                <input type="email" placeholder="E-mail">
-            </label>
+        <div class="modal__content-wrapper">
+            <h3 class="modal__title">Купить тур</h3>
 
-            <button class="button modal__button">Отправить</button>
-        </form>
-  
+            <form class="modal__form" method="get" target="_blank">
+                <label class="modal__label modal__label--tel">
+                    <input type="tel" placeholder="Введите 10 цифр номера" maxlength="10">
+                </label>
+        
+                <label class="modal__label modal__label--email">
+                    <input type="email" placeholder="E-mail">
+                </label>
+        
+                <button class="button modal__button">Отправить</button>
+            </form>
+        </div>
+    </div>
 </section>
 
 <script src="js/scripts.min.js"></script>

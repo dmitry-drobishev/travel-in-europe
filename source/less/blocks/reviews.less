@@ -7,6 +7,10 @@
     @media (min-width: @tablet) {
         padding-top: 79px;
     }
+
+    @media (min-width: @desktop) {
+        width: 700px;
+    }
 }
 
 .reviews__content-wrapper {
@@ -33,6 +37,13 @@
     position: relative;
     width: min-content;
 
+    @media (min-width: @tablet) {
+        font-size: 30px;
+        line-height: 37px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
     &::after {
         position: absolute;
         content: "";
@@ -41,13 +52,11 @@
         background-color: @light-pink;
         bottom: -10px;
         left: 0;
-    }
 
-    @media (min-width: @tablet) {
-        font-size: 30px;
-        line-height: 37px;
-        margin-left: 0;
-        margin-right: auto;
+        @media (min-width: @tablet) {
+            bottom: -12px;
+            width: 70px;
+        }
     }
 }
 
@@ -55,7 +64,7 @@
     font-size: 14px;
     line-height: 28px;
     text-align: center;
-    letter-spacing: -0.408333px;
+    letter-spacing: -0.5px;
     margin: 0;
     margin-top: 31px;
 
@@ -80,7 +89,7 @@
 .reviews__name {
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: -0.466667px;
+    letter-spacing: -0.5px;
     text-align: center;
     margin: 0;
     margin-top: 13px;
@@ -104,7 +113,7 @@
 .reviews__background {
     height: 415px;
     width: 100%;
-    background-image: url(../img/reviews/rew.jpg);
+    background-image: url("/img/reviews/rew.jpg");
     background-size: cover;
     background-position: 65%;
     background-repeat: no-repeat;
@@ -115,14 +124,24 @@
     margin: 0;
 
     @media (min-resolution: 2dppx) {
-            background-image: url("../img/reviews/rew@2x.jpg");
+            background-image: url("/img/reviews/rew@2x.jpg");
     }
 
     @media (min-width: @tablet) {
-        background-image: url(../img/reviews/reviews-background-tablet.jpg);
+        background-image: url(/img/reviews/reviews-background-tablet.jpg);
 
         @media (min-resolution: 2dppx) {
-            // background-image: url("../img/reviews-background-tablet@2x.jpg");
+            background-image: url("/img/reviews/reviews-background-tablet@2x.jpg");
+        }
     }
+
+    @media (min-width: @desktop) {
+        width: 430px;
+        height: 596px;
+        background-image: url(/img/reviews/reviews-background-desktop.jpg);
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("/img/reviews/reviews-background-desktop@2x.jpg")
+        }
     }
 }

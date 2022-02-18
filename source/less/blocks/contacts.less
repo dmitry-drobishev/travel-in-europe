@@ -1,6 +1,10 @@
 .contacts {
     padding: 30px 26px 25px 35px;
     border-bottom: 1px solid #D7D9DF;
+
+    @media (min-width: @tablet) {
+        padding: 0 26px 30px 50px;
+    }
 }
 
 .contacts__title {
@@ -9,6 +13,10 @@
     font-size: 18px;
     line-height: 32px;
     text-align: center;
+
+    @media (min-width: @tablet) {
+        text-align: start;
+    }
 }
 
 .contacts__mail {
@@ -22,6 +30,11 @@
     margin-top: 25px;
     position: relative;
     right: -17px;
+
+    @media (min-width: @tablet) {
+        right: -20px;
+        margin-top: 27px;
+    }
 
     &::before {
         position: absolute;
@@ -43,6 +56,11 @@
     margin-top: 26px;
     position: relative;
     right: -12px;
+
+    @media (min-width: @tablet) {
+        margin-top: 24px;
+        right: 0;
+    }
 
     &::before {
         position: absolute;

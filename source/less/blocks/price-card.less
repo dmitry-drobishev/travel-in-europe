@@ -9,10 +9,12 @@
     gap: 30px;
 
     @media (min-width: @tablet) {
+        width: 626px;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        // justify-content: space-around;
         gap: 50px;
+        margin-bottom: 110px;
     }
 }
 
@@ -33,10 +35,16 @@
         & .price-card__name {
             color: @light-pink;
             letter-spacing: normal;
+            line-height: 38px;
         }
     
         & .price-card__value {
             color: @light-pink;
+
+            @media (min-width: @tablet) {
+                margin-top: 8px;
+            }
+
         }
     
         & .price-card__text {
@@ -63,10 +71,10 @@
     letter-spacing: -1.27273px;
     margin: 0;
 
-    @media (min-width: @tablet) {
-        font-size: 30px;
-        line-height: 45px;
-    }
+    // @media (min-width: @tablet) {
+    //     font-size: 30px;
+    //     line-height: 45px;
+    // }
 }
 
 .price-card__value {

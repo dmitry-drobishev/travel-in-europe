@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Туристическая компания «Путешествие по Европе»</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Туристическая компания «Путешествие по Европе»</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
 
@@ -62,6 +63,11 @@
                     <img class="places__img" src="./img/places/greece-mobile.jpg" srcset="./img/places/greece-mobile@2x.jpg" width="288" height="425" alt="вид на горы">
                 </picture>
                 <p class="places__item-title">Греция</p>
+                <div class="places__item-hover-block">
+                    <button class="places__hover-button">
+                        смотреть подробнее
+                    </button>
+                </div>
             </li>
 
             <li class="places__item">
@@ -72,6 +78,11 @@
                     <img class="places__img" src="./img/places/albania-mobile.jpg" srcset="./img/places/albania-mobile@2x" width="288" height="425" alt="море и пляж вид сверху">
                 </picture>
                 <p class="places__item-title">Албания</p>
+                <div class="places__item-hover-block">
+                    <button class="places__hover-button">
+                        смотреть подробнее
+                    </button>
+                </div>
             </li>
 
             <li class="places__item">
@@ -82,6 +93,11 @@
                     <img class="places__img" src="./img/places/macedonia-mobile.jpg" srcset="./img/places/macedonia-mobile@2x" width="288" height="425" alt="вид на море и старую церковь">
                 </picture>
                 <p class="places__item-title">Македония</p>
+                <div class="places__item-hover-block">
+                    <button class="places__hover-button">
+                        смотреть подробнее
+                    </button>
+                </div>
             </li>
 
             <li class="places__item">
@@ -92,6 +108,11 @@
                     <img class="places__img" src="./img/places/montenegro-mobile.jpg" srcset="./img/places/montenegro-mobile@2x" width="288" height="425" alt="горная река и лес вид сверху">
                 </picture>
                 <p class="places__item-title">Черногория</p>
+                <div class="places__item-hover-block">
+                    <button class="places__hover-button">
+                        смотреть подробнее
+                    </button>
+                </div>
             </li>
 
             <li class="places__item">
@@ -103,6 +124,11 @@
                     <img class="places__img" src="./img/places/croatia-mobile.jpg" srcset="./img/places/croatia-mobile@2x" width="288" height="425" alt="подвезное озеро, сталактиты и сталагмиты">
                 </picture>
                 <p class="places__item-title">Хорватия</p>
+                <div class="places__item-hover-block">
+                    <button class="places__hover-button">
+                        смотреть подробнее
+                    </button>
+                </div>
             </li>
         </ul>
     </section>
@@ -162,62 +188,6 @@
                 </div>
             </section>
         </div>
-
-        <!-- Албания -->
-        <div class="tours-reviews__item tours-reviews__item--hidden">
-            <section class="tours__card">
-                <h3 class="tours__card-title">Албания</h3>
-                <p class="tours__card-text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
-                <button class="button tours__card-button">купить тур сейчас</button>
-            </section>
-        
-            <section class="reviews">
-                <div class="reviews__content-wrapper">
-                    <h3 class="reviews__title">Отзывы</h3>
-                    <p class="reviews__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
-                    <div class="reviews__user-wrapper">
-                        <picture>
-                            <source type="image/webp" srcset="./img/reviews/reviews-foto1.webp 1x, ./img/reviews/reviews-foto1@2x.webp 2x">
-                            <img class="reviews__foto" src="./img/reviews/reviews-foto1.jpg" srcset="./img/reviews/reviews-foto1@2x.jpg" width="38" height="38"  alt="аватарка комментатора">
-                        </picture>
-                        <p class="reviews__name">Маришка</p>
-                    </div>
-                </div>
-                <div class="reviews__background">
-                    <span class="visually-hidden">
-                        Фоновое изображение блока
-                    </span>
-                </div>
-            </section>
-        </div>
-
-        <div class="tours-reviews__item tours-reviews__item--hidden">
-        <section class="tours__card">
-            <h3 class="tours__card-title">Греция</h3>
-            <p class="tours__card-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
-            <button class="button tours__card-button">купить тур сейчас</button>
-        </section>
-    
-        <section class="reviews">
-            <div class="reviews__content-wrapper">
-                <h3 class="reviews__title">Отзывы</h3>
-                <p class="reviews__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
-                <div class="reviews__user-wrapper">
-                    <picture>
-    
-                        <source type="image/webp" srcset="./img/reviews/reviews-foto1.webp 1x, ./img/reviews/reviews-foto1@2x.webp 2x">
-                        <img class="reviews__foto" src="./img/reviews/reviews-foto1.jpg" srcset="./img/reviews/reviews-foto1@2x.jpg" width="38" height="38"  alt="аватарка комментатора">
-                    </picture>
-                    <p class="reviews__name">Влада Голицина</p>
-                </div>
-            </div>
-            <div class="reviews__background">
-                <span class="visually-hidden">
-                    Фоновое изображение блока
-                </span>
-            </div>
-        </section>
-    </div>
     </div>
 
     <section class="price" id="price">
@@ -274,11 +244,11 @@
             <p class="question__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             <form class="question__form" method="post">
                 <div class="question__form-input-wrapper">
-                    <label class="question__label question__tel">
+                    <label class="question__label question__label--tel" aria-label="введите номер телефона без +7">
                         <input type="tel" placeholder="Введите 10 цифр номера" maxlength="10">
                     </label>
     
-                    <label class="question__label question__form-email">
+                    <label class="question__label question__label--email" aria-label="введите адрес электронной почты">
                         <input type="email" placeholder="E-mail">
                     </label>
                 </div>
@@ -296,29 +266,36 @@
         <h3 class="next-trips__title">Следующие путешествия</h3>
 
         <ul class="next-trips__list">
-            <ul class="next-trips__column-list">
-                <li class="next-trips__item">Марсель</li>
-                <li class="next-trips__item">Ним</li>
-                <li class="next-trips__item">Монпелье</li>
-                <li class="next-trips__item">Барселона</li>
-                <li class="next-trips__item">Пальма</li>
-            </ul>
+            <li>
+                <ul class="next-trips__column-list">
+                    <li class="next-trips__item">Марсель</li>
+                    <li class="next-trips__item">Ним</li>
+                    <li class="next-trips__item">Монпелье</li>
+                    <li class="next-trips__item">Барселона</li>
+                    <li class="next-trips__item">Пальма</li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="next-trips__column-list">
+                    <li class="next-trips__item">Сардиния</li>
+                    <li class="next-trips__item">Палермо</li>
+                    <li class="next-trips__item">Катания</li>
+                    <li class="next-trips__item">Неаполь</li>
+                    <li class="next-trips__item">Рим</li>
+                </ul>
+            </li>
+            
+            <li>
+                <ul class="next-trips__column-list">
+                    <li class="next-trips__item">Корс</li>
+                    <li class="next-trips__item">Ницца</li>
+                    <li class="next-trips__item">Монако</li>
+                    <li class="next-trips__item">Динь-ле-Бен</li>
+                    <li class="next-trips__item">Гренобль</li>
+                </ul>
+            </li>
     
-            <ul class="next-trips__column-list">
-                <li class="next-trips__item">Сардиния</li>
-                <li class="next-trips__item">Палермо</li>
-                <li class="next-trips__item">Катания</li>
-                <li class="next-trips__item">Неаполь</li>
-                <li class="next-trips__item">Рим</li>
-            </ul>
-    
-            <ul class="next-trips__column-list">
-                <li class="next-trips__item">Корс</li>
-                <li class="next-trips__item">Ницца</li>
-                <li class="next-trips__item">Монако</li>
-                <li class="next-trips__item">Динь-ле-Бен</li>
-                <li class="next-trips__item">Гренобль</li>
-            </ul>
         </ul>
     </section>
 
@@ -342,18 +319,18 @@
         
         <picture>
             <source type="image/webp" srcset="./img/modal/modal-tablet.webp 1x, ./img/modal/modal-tablet@2x.webp 2x">
-            <img class="modal__img" src="./img/modal/modal-tablet.jpg" srcset="./img/modal/modal-tablet@2x.jpg 2x" width="344" height="444px" alt="фоновое изображение море и скалы">
+            <img class="modal__img" src="./img/modal/modal-tablet.jpg" srcset="./img/modal/modal-tablet@2x.jpg 2x" width="344" height="444" alt="фоновое изображение море и скалы">
         </picture>
 
         <div class="modal__content-wrapper">
             <h3 class="modal__title">Купить тур</h3>
 
             <form class="modal__form" method="get" target="_blank">
-                <label class="modal__label modal__label--tel">
+                <label class="modal__label modal__label--tel" aria-label="введите номер телефона без +7">
                     <input type="tel" placeholder="Введите 10 цифр номера" maxlength="10">
                 </label>
         
-                <label class="modal__label modal__label--email">
+                <label class="modal__label modal__label--email" aria-label="введите электронную почту">
                     <input type="email" placeholder="E-mail">
                 </label>
         
@@ -379,16 +356,3 @@
 
 </body>
 </html>
-
-
-<!-- <picture>
-    <source media="(min-width: 1280px)" srcset="./img/promo/promo-food-desktop.webp 1x, ./img/promo/promo-food-desktop@2x.webp 2x">
-    <source media="(min-width: 768px)" srcset="./img/promo/promo-food-tablet.webp 1x, ./img/promo/promo-food-tablet@2x.webp 2x">
-    <source type="image/webp" srcset="./img/promo/promo-food-mobile.webp 1x, ./img/promo/promo-food-mobile@2x.webp 2x">
-    <source media="(min-width: 1280px)" srcset="./img/promo/promo-food-desktop.png 1x, ./img/promo/promo-food-desktop@2x.png 2x">
-    <source media="(min-width: 768px)" srcset="./img/promo/promo-food-tablet.png 1x, ./img/promo/promo-food-tablet@2x.png 2x">
-    <img class="promo__img" src="./img/promo/promo-food-mobile.png" srcset="./img/promo/promo-food-mobile@2x.png 2x" width="280" height="270" alt="изображение упаковки питания cat energy">
-  </picture> -->
-
-  <!-- <source media="(min-width: 768px)" srcset="./img/promo/promo-food-tablet.webp 1x, ./img/promo/promo-food-tablet@2x.webp 2x">
-  <source media="(min-width: 768px)" srcset="./img/promo/promo-food-tablet.png 1x, ./img/promo/promo-food-tablet@2x.png 2x"> -->

@@ -107,6 +107,28 @@
         width: 269px;
         margin-top: 0;
     }
+
+    &:invalid {
+        border-color: @light-pink;
+    }
+}
+
+.question__label--tel {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "*";
+        color: @light-pink;
+        left: 15px;
+        top: 7px;
+    }
+}
+
+.question__label--tel input {
+    &::placeholder {
+        text-align: center;
+    }
 }
 
 .question__form-button {

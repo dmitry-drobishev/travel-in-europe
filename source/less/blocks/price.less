@@ -1,121 +1,120 @@
 .price {
-    margin: 0 auto;
-    margin-top: 45px;
-    padding: @mobile-padding;
+  margin: 0 auto;
+  margin-top: 45px;
+  padding: @mobile-padding;
 
-    @media (min-width: @tablet) {
-        margin-top: 35px;
-    }
+  @media (min-width: @tablet) {
+    margin-top: 35px;
+  }
 
-    @media (min-width: @desktop) {
-        width: @desktop-content;
-        display: grid;
-        grid-template-columns: 770px 400px;
-        padding: 0;
-        margin-top: 220px;
-        gap: 90px;
-    }
+  @media (min-width: @desktop) {
+    width: @desktop-content;
+    display: grid;
+    grid-template-columns: 770px 400px;
+    padding: 0;
+    margin-top: 220px;
+    gap: 90px;
+  }
 }
 
 .price__wrapper {
-    @media (min-width: @desktop) {
-        width: 300px;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        margin-top: 110px;
-    }
-    
+  @media (min-width: @desktop) {
+    width: 300px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 110px;
+  }
 }
 
 .price__title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
 
-    @media (min-width: @tablet) {
-        font-size: 30px;
-        height: 45px;
+  @media (min-width: @tablet) {
+    font-size: 30px;
+    height: 45px;
+  }
+
+  @media (min-width: @desktop) {
+    font-size: 55px;
+    line-height: 90px;
+    text-align: start;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 175px;
+      height: 3px;
+      background-color: @light-pink;
+      left: 0;
+      bottom: -60px;
     }
-
-    @media (min-width: @desktop) {
-        font-size: 55px;
-        line-height: 90px;
-        text-align: start;
-        position: relative;
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 175px;
-            height: 3px;
-            background-color: @light-pink;
-            left: 0;
-            bottom: -60px;
-        }
-    }
+  }
 }
 
 .price__text {
-    line-height: 27px;
-    text-align: center;
-    color: @light-grey-2-07;
-    margin: 0;
-    margin-top: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: @light-grey-2-07;
+  margin: 0;
+  margin-top: 20px;
 
-    @media (min-width: @tablet) {
-        margin-top: 18px;
-    }
+  @media (min-width: @tablet) {
+    margin-top: 18px;
+  }
 
-    @media (min-width: @desktop) {
-        margin-top: 93px;
-        text-align: start;
-    }
+  @media (min-width: @desktop) {
+    margin-top: 93px;
+    text-align: start;
+  }
 }
 
 .price__text br {
-    @media (max-width: @mobile-max) {
-        display: none;
-    }
+  @media (max-width: @mobile-max) {
+    display: none;
+  }
 
-    @media (min-width: @desktop) {
-        display: none;
-    }
+  @media (min-width: @desktop) {
+    display: none;
+  }
 }
 
 .price__info {
-    font-weight: 500;
-    font-size: 18px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  color: @extra-dark-grey;
+  text-align: center;
+  margin: 0;
+  margin-top: 18px;
+
+  @media (min-width: @tablet) {
+    margin-top: 32px;
+  }
+
+  @media (min-width: @desktop) {
+    font-size: 22px;
     line-height: 34px;
-    color: @extra-dark-grey;
-    text-align: center;
-    margin: 0;
-    margin-top: 18px;
-
-    @media (min-width: @tablet) {
-        margin-top: 32px;
-    }
-
-    @media (min-width: @desktop) {
-        font-size: 22px;
-        line-height: 34px;
-        margin-top: 60px;
-    }
+    margin-top: 60px;
+  }
 }
 
 .price__phone {
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-    font-size: 18px;
-    line-height: 32px;
-    text-align: center;
-    color: @light-orange;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: @light-orange;
 
-    @media (min-width: @desktop) {
-        font-size: 20px;
-        line-height: 32px;
-        color: @basic-black;
-    }
+  @media (min-width: @desktop) {
+    font-size: 20px;
+    line-height: 32px;
+    color: @basic-black;
+  }
 }

@@ -1,123 +1,123 @@
 .about {
-    margin: 0 auto;
-    position: relative;
-    width: 320px;
-    min-height: 235px;
-    box-sizing: border-box;
-    padding-bottom: 10px;
-    background-image: url(/img/about/about-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+  margin: 0 auto;
+  position: relative;
+  width: 320px;
+  min-height: 235px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  background-image: url("/img/about/about-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/about/about-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet) {
+    width: 768px;
+    min-height: 344px;
+    background-image: url("/img/about/about-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-        background-image: url("/img/about/about-mobile@2x.jpg");
+      background-image: url("/img/about/about-tablet@2x.jpg");
     }
+  }
 
-    @media (min-width: @tablet) {
-        width: 768px;
-        min-height: 344px;
-        background-image: url(/img/about/about-tablet.jpg);
+  @media (min-width: @desktop) {
+    width: 100vw;
+    max-width: 1920px;
+    height: 860px;
+    background-size: cover;
+    background-image: url("/img/about/about-desktop.jpg");
+    position: relative;
 
-        @media (min-resolution: 2dppx) {
-            background-image: url("/img/about/about-tablet@2x.jpg");
-        }
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/about/about-desktop@2x.jpg");
     }
-
-    @media (min-width: @desktop) {
-        width: 100vw;
-        max-width: 1920px;
-        height: 860px;
-        background-size: cover;
-        background-image: url("/img/about/about-desktop.jpg");
-        position: relative;
-
-        @media (min-resolution: 2dppx) {
-            background-image: url("/img/about/about-desktop@2x.jpg");
-        }
-    }
+  }
 }
 
 .about__content-wrapper {
-    @media (min-width: @tablet) {
-        width: 400px;
-        margin: 0 auto;
-    }
+  @media (min-width: @tablet) {
+    width: 400px;
+    margin: 0 auto;
+  }
 
-    @media (min-width: @desktop) {
-        padding-top: 125px;
-        position: absolute;
-        left: 50%;
-        width: 420px;
-        margin-left: 115px;
-    }
+  @media (min-width: @desktop) {
+    padding-top: 125px;
+    position: absolute;
+    left: 50%;
+    width: 420px;
+    margin-left: 115px;
+  }
 }
 
 .about__title {
-    margin: 0 auto;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    color: @basic-white;
-    padding-top: 81px;
-    width: 290px;
-    text-align: center;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: @basic-white;
+  padding-top: 81px;
+  width: 290px;
+  text-align: center;
 
-    @media (min-width: @tablet) {
-        width: auto;
-        font-size: 30px;
-        line-height: 45px;
-        padding-top: 60px;
-    }
+  @media (min-width: @tablet) {
+    width: auto;
+    font-size: 30px;
+    line-height: 45px;
+    padding-top: 60px;
+  }
 
-    @media (min-width: @desktop) {
-        text-align: start;
-        font-size: 55px;
-        line-height: 80px;
-        letter-spacing: -1.1px;
-    }
+  @media (min-width: @desktop) {
+    text-align: start;
+    font-size: 55px;
+    line-height: 80px;
+    letter-spacing: -1.1px;
+  }
 }
 
 .about__text {
-    line-height: 27px;
-    text-align: center;
-    letter-spacing: -0.466667px;
-    padding: @mobile-padding;
-    margin: 0 auto;
-    margin-top: 102px;
-    margin-bottom: 20px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.47px;
+  padding: @mobile-padding;
+  margin: 0 auto;
+  margin-top: 102px;
+  margin-bottom: 20px;
 
-    @media (min-width: @tablet) {
-        margin-top: 15px;
-        color: @basic-white;
-        padding: 0;
-        margin-bottom: 11px;
-    }
+  @media (min-width: @tablet) {
+    margin-top: 15px;
+    color: @basic-white;
+    padding: 0;
+    margin-bottom: 11px;
+  }
 
-    @media (min-width: @desktop) {
-        width: 380px;
-        margin-left: 0;
-        text-align: start;
-        margin-top: 30px;
-        margin-bottom: 35px;
-    }
+  @media (min-width: @desktop) {
+    width: 380px;
+    margin-left: 0;
+    text-align: start;
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
 }
 
 .about__button {
-    text-align: start;
-    padding-left: 38px;
-    position: relative;
+  text-align: start;
+  padding-left: 38px;
+  position: relative;
 
-    @media (min-width: @desktop) {
-        width: 340px;
-        margin-left: 0;
-    }
+  @media (min-width: @desktop) {
+    width: 340px;
+    margin-left: 0;
+  }
 
-    &::after {
-        position: absolute;
-        content: "";
-        background: url("/img/arrow-down-icon.svg") no-repeat;
-        width: 15px;
-        height: 15px;
-        right: 40px;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("/img/arrow-down-icon.svg") no-repeat;
+    width: 15px;
+    height: 15px;
+    right: 40px;
+  }
 }

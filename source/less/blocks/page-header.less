@@ -21,38 +21,36 @@
 }
 
 .page-header__row-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 
-    @media (min-width: @tablet) {
-      width: 768px;
-    }
+  @media (min-width: @tablet) {
+    width: 768px;
+  }
 
-    @media (min-width: @desktop) {
-      width: auto;
-      margin: 0;
-    }
-
+  @media (min-width: @desktop) {
+    width: auto;
+    margin: 0;
+  }
 }
 
 .page-header__logo {
-    display: block;
-   
-    margin: 0;
-    margin-left: 16px;
-    margin-top: 18px;
-    margin-bottom: 14px;
+  display: block;
+  margin: 0;
+  margin-left: 16px;
+  margin-top: 18px;
+  margin-bottom: 14px;
 
-    @media (min-width: @tablet) {
-      margin-left: 21px;
-    }
+  @media (min-width: @tablet) {
+    margin-left: 21px;
+  }
 
-    @media (min-width: @desktop) {
-      margin-left: 0;
-      margin-top: 39px;
-      margin-bottom: 39px;
-    }
+  @media (min-width: @desktop) {
+    margin-left: 0;
+    margin-top: 39px;
+    margin-bottom: 39px;
+  }
 }
 
 .page-header__logo img {
@@ -67,38 +65,37 @@
 }
 
 .page-header__toggle {
-    display: block;
-    height: 50px;
-    width: 50px;
-    border: none;
-    background-color: @light-pink;
-    cursor: pointer;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: @light-pink;
+  cursor: pointer;
 
-    @media (min-width: @tablet) {
-      width: 72px;
-    }
-  
-    @media (min-width: @desktop) {
-      display: none;
-    }
+  @media (min-width: @tablet) {
+    width: 72px;
   }
-  
-  .page-header__toggle--nojs {
+
+  @media (min-width: @desktop) {
     display: none;
   }
-  
-  .page-header__toggle--close {
-    background-image: url("../img/menu.svg");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-  }
-  
-  .page-header__toggle--open {
-    background-image: url("../img/menu-close.svg");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    background-color: transparent;
-  }
-  
+}
+
+.page-header__toggle--nojs {
+  display: none;
+}
+
+.page-header__toggle--close {
+  background-image: url("../img/menu.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.page-header__toggle--open {
+  background-image: url("../img/menu-close.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-color: transparent;
+}

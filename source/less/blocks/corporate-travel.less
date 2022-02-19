@@ -11,6 +11,8 @@
     @media (min-width: @desktop) {
         grid-column-start: auto;
         grid-column-end: auto;
+        padding-top: 0;
+        border-left: 1px solid @light-grey-5;
     }
 }
 
@@ -20,6 +22,10 @@
     font-size: 18px;
     line-height: 32px;
     text-align: center;
+
+    @media (min-width: @desktop) {
+        text-align: start;
+    }
 }
 
 .corporate-travel__text {
@@ -29,4 +35,8 @@
     line-height: 24px;
     text-align: center;
     color: @light-grey-3;
+
+    @media (min-width: @desktop) {
+        text-align: start;
+    }
 }

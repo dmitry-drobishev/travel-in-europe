@@ -1,6 +1,7 @@
 .modal {
+    display: block;
     width: 320px;
-    min-height: 568px;
+    height: 568px;
     padding: 100px 16px;
     box-sizing: border-box;
     position: fixed;
@@ -10,16 +11,18 @@
     bottom: auto;
     top: 120px;
     background-color: @basic-white;
-    // position: relative;
-
-    display: none;
 
     @media (min-width: @tablet) {
         width: 720px;
         height: 444px;
         padding: 0;
         background-color: @light-grey-4;
+        top: 200px;
     }
+}
+
+.modal--hidden {
+    display: none;
 }
 
 .modal__wrapper {
@@ -34,6 +37,8 @@
     @media (min-width: @tablet) {
         width: 385px;
         margin: 0 auto;
+        padding: 72px 16px;
+        box-sizing: border-box;
         
     }
 }
@@ -46,7 +51,7 @@
     display: none;
 
     @media (min-width: @tablet) {
-        width: 344px;
+        width: 334px;
         height: 444px;
         display: block;
     }
@@ -99,5 +104,11 @@
     
     @media (min-width: @tablet) {
         width: 174px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    @media (min-width: @desktop) {
+        padding: 19px 0;
     }
 }

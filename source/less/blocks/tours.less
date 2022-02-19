@@ -3,6 +3,7 @@
 
     @media (min-width: @desktop) {
         position: relative;
+        width: @desktop;
     }
 }
 
@@ -15,6 +16,7 @@
 
     @media (min-width: @desktop) {
         width: 370px;
+        margin-top: 10px;
     }
 }
 
@@ -36,7 +38,18 @@
         font-size: 55px;
         line-height: 90px;
         letter-spacing: -1.245px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 175px;
+            height: 3px;
+            background-color: @light-pink;
+            left: 0;
+            bottom: -20px;
         }
+    }
 }
 
 .tours__card-text {
@@ -55,6 +68,7 @@
     @media (min-width: @desktop) {
         padding: 0;
         text-align: start;
+        margin-top: 53px;
     }
 }
 
@@ -68,6 +82,7 @@
 
     @media (min-width: @desktop) {
         margin-left: 0;
+        margin-top: 45px;
     }
 }
 
@@ -96,8 +111,20 @@
 .tours__navigation-item {
     &--hidden {
         display: none;
+
+        @media (min-width: @tablet) {
+            display: block;
+        }
     }
 
+    
+    &--tablet-hidden {
+        display: none;
+        
+        @media (min-width: @desktop) {
+            display: block;
+        }
+    }
     &--active .tours__navigation-link {
         color: @light-pink;
     }

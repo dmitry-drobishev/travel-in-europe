@@ -66,6 +66,10 @@
       position: static;
       color: @extra-dark-grey;
       background-color: transparent;
+
+      &:hover {
+        color: @light-pink;
+      }
     }
 
     &::before {
@@ -75,6 +79,10 @@
         height: 25px;
         background: url(../img/shape-icon.svg) no-repeat;
         right: 17px;
+
+        @media (min-width: @desktop){
+          display: none;
+        }
     }
 }
 
@@ -86,5 +94,9 @@
     font-size: 18px;
     line-height: 32px;
     color: @extra-dark-grey;
+
+    &:hover {
+      color: @light-pink;
+    } 
   }
 }
